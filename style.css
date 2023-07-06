@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid black; */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  background-image: url(image/bg-header.jpg);
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+.navbar {
+  padding: 10px;
+  /* border-bottom: 1px solid black; */
+  /* background-color: rgba(255, 255, 255, 0.5); */
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 95px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+span {
+  color: red;
+}
+
+.link ul {
+  display: flex;
+}
+
+.link ul li {
+  padding: 0 15px;
+  list-style-type: none;
+}
+
+.link ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  z-index: 9999;
+}
+
+.link ul li a:hover {
+  color: red;
+}
+.kiri {
+  line-height: 20px;
+  flex-basis: 40%;
+  padding-left: 40px;
+  z-index: 9999;
+}
+h2 {
+  font-size: 50px;
+  color: red;
+  line-height: 50px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #cd1818;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+button:hover {
+  background-color: black;
+  scale: 105%;
+}
+
+button a {
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+button a:hover {
+  color: white;
+}
+
+.kanan {
+  padding-right: 30px;
+  margin-bottom: 10px;
+  /* border: 1px solid rgb(0, 106, 255); */
+}
+.kanan img {
+  width: 650px;
+  /* border: 1px solid red; */
+}
+
+.container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80%;
+  background: linear-gradient(0deg, rgb(255, 255, 255) 3%, rgba(255, 255, 255, 0) 25%);
+  /* border: 1px solid aqua; */
+}
+
+section h2 {
+  margin-top: 30px;
+  color: black;
+  font-size: 30px;
+  width: 250px;
+  margin: auto;
+  font-weight: 500;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+.isi {
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.isi img {
+  width: 400px;
+}
+
+.tentang {
+  padding: 25px;
+}
+
+.jadwal {
+  text-align: center;
+}
+
+.jadwal h2 {
+  color: black;
+}
+
+.konten {
+  display: block;
+  /* border: 1px solid aqua; */
+}
+
+.kategori {
+  width: 300px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 15px;
+  background-color: #cd1818;
+  color: white;
+}
+.kategori-d {
+  width: 300px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 15px;
+  background-color: #116d6e;
+  color: white;
+}
+
+.baris1,
+.baris2 {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.card,
+.card2 {
+  margin-top: 20px;
+  width: 300px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: left;
+  border-radius: 10px;
+  background-size: cover;
+}
+
+.top {
+  display: block;
+  color: black;
+  padding: 5px;
+  border-bottom: 1px solid black;
+}
+
+.date,
+.time,
+.place,
+.date2 {
+  display: flex;
+}
+
+.date {
+  background-color: #cd1818;
+  color: white;
+  border-radius: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  align-items: center;
+  justify-content: center;
+}
+.date2 {
+  background-color: #116d6e;
+  color: white;
+  border-radius: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  align-items: center;
+  justify-content: center;
+}
+
+.time {
+  margin-top: 5px;
+}
+i {
+  margin-left: 5px;
+  display: none;
+}
+.top h3,
+h4,
+h5 {
+  margin-left: 5px;
+}
+
+.place {
+  align-items: center;
+}
+.bottom ul {
+  margin-left: 25px;
+}
+
+.bottom2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HP */
+@media screen and (max-width: 480px) {
+  .logo a {
+    margin-left: 1px;
+  }
+  .link {
+    display: none;
+  }
+
+  .head {
+    display: block;
+    padding-left: 0px;
+    justify-content: left;
+  }
+
+  .kiri {
+    padding-left: 10px;
+  }
+
+  .kanan {
+    padding-left: 10px;
+  }
+
+  .kanan img {
+    width: 400px;
+  }
+
+  section {
+    padding-top: 10px;
+  }
+
+  section h2 {
+    text-align: center;
+  }
+  .tentang {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .isi {
+    display: block;
+    align-items: center;
+    padding: 1px;
+  }
+
+  .isi img {
+    width: 100%;
+    padding-top: 15px;
+  }
+  .baris1,
+  .baris2 {
+    display: block;
+    padding: 20px;
+  }
+
+  .card,
+  .card2 {
+    margin: auto;
+    margin-top: 15px;
+  }
+}
